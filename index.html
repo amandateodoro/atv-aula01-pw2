@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1>Amanda Teodoro</h1>
+        <h3>Estudante de Análise e Desenvolvimento de Sistemas, Ji-Paraná RO</h3>
+        <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Seções -->
+    <section id="home" class="section first">Início</section>
+    <section id="galeria" class="section second">Galeria</section>
+    <section id="sobre" class="section third">Sobre</section>
+    <section id="contato" class="section fourth">Contato</section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Meu Portfólio. Todos os direitos reservados.</p>
+    </footer>
+    
+    <!-- Script para rolagem suave -->
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(event) {
+                event.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
