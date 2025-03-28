@@ -1,0 +1,55 @@
+header {
+    width: 100%;
+    padding: 28px 8%;
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav_logo {
+    font-size: 24px;
+    color: #1C1E52;
+}
+
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #82889E;
+    font-weight: 600;
+}
+
+.nav-item.active a {
+    color: #2E2F37;
+    border-bottom: 3px solid #FD8061;
+}
+
+#mobile_btn {
+    display: none;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+@media screen and (max-width: 1170px) {
+    #nav_list,
+    #navbar .btn-default {
+        display: none;
+    }
+    #mobile_btn {
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+}
