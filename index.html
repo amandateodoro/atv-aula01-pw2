@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clave de Sol | Escola de Música</title>
     <link rel="icon" type="image/png" sizes="32x32" href="images/logo-clara.png" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/home.css">
 </head>
 <body>
     <header>
         <nav id="navbar">
             <i class="fa-solid fa-compact-disc" id="nav_logo"> Clave de Sol</i>
             <ul id="nav_list">
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a href="#home">Início</a>
                 </li>
                 <li class="nav-item">
@@ -49,5 +51,36 @@
             </button>
         </div>
     </header>
+    <main id="content">
+        <section id="home">
+            <div id="cta">
+                <h1 class="title">Lorem ipsum dolor sit
+                    <span> amet</span>
+                </h1>
+                <p class="description">Ut eaque illo est sint modi in enim omnis ea dolorem internos! Eum voluptates iure qui vero deserunt est aliquid obcaecati et internos aliquid sed dolores sapiente in vero quidem.</p>
+                
+                <div id="cta_buttons">
+                    <a href="" class="btn-default">Acessar cursos</a>
+                </div>
+            </div>
+
+            <div class="social-media-buttons">
+                <a href="https://wa.me/5569984107407">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="https://www.instagram.com/amand4teodoro/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/amanda.teodoro.1848/">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+
+            <div id="banner">
+                <img src="images/img-banner.png" alt="">
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
