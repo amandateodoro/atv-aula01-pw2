@@ -16,54 +16,83 @@
         <nav id="navbar">
             <i class="fa-solid fa-compact-disc" id="nav_logo"> Clave de Sol</i>
             <ul id="nav_list">
-                <li class="nav-item active">
-                    <a href="#home">Início</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about">Sobre nós</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#courses">Cursos</a>
-                </li>
+                <li class="nav-item active"><a href="#home">Início</a></li>
+                <li class="nav-item"><a href="#about">Sobre nós</a></li>
+                <li class="nav-item"><a href="#courses">Cursos</a></li>
             </ul>
-            <button class="btn-default">
-                Entre em contato
-            </button>
-
-            <button id="mobile_btn">
-                <i class="fa-solid fa-bars"></i>
-            </button>            
+            <button class="btn-default">Entre em contato</button>
+            <button id="mobile_btn"><i class="fa-solid fa-bars"></i></button>            
         </nav>
         <div id="mobile_menu">
             <ul id="mobile_nav_list">
-                <li class="nav-item">
-                    <a href="#home">Início</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about">Sobre nós</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#courses">Cursos</a>
-                </li>
+                <li class="nav-item"><a href="#home">Início</a></li>
+                <li class="nav-item"><a href="#about">Sobre nós</a></li>
+                <li class="nav-item"><a href="#courses">Cursos</a></li>
             </ul>
-            <button class="btn-default">
-                Entre em contato
-            </button>
+            <button class="btn-default">Entre em contato</button>
         </div>
     </header>
     <main id="content">
-        <section id="home">
-            <div id="cta">
-                <h1 class="title">Lorem ipsum dolor sit
-                    <span> amet</span>
-                </h1>
-                <p class="description">Ut eaque illo est sint modi in enim omnis ea dolorem internos! Eum voluptates iure qui vero deserunt est aliquid obcaecati et internos aliquid sed dolores sapiente in vero quidem.</p>
-                
-                <div id="cta_buttons">
-                    <a href="" class="btn-default">Acessar cursos</a>
+        <section id="hero">
+            <div id="overlay"></div>
+            <div id="hero_content">
+                <h1>Seu Talento Musical Começa Aqui!</h1>
+                <p>Ut eaque illo est sint modi in enim omnis ea dolorem internos! Eum voluptates iure qui vero deserunt est aliquid obcaecati et internos aliquid sed dolores sapiente in vero quidem.</p>
+                <div id="hero_buttons">
+                    <a href="#courses" class="btn-default">Conheça nossos cursos</a>
                 </div>
             </div>
+        </section>
 
+        <section id="about">
+            <div id="about_content">
+                <span class="tag">Sobre nós</span>
+                <h2 id="about_title">MAIS DE 10 ANOS DE TRADIÇÃO</h2>
+                <p id="about_description">Ut eaque illo est sint modi in enim omnis ea dolorem internos! Eum voluptates iure qui vero deserunt est aliquid obcaecati et internos aliquid sed dolores sapiente in vero quidem.</p>
+                <a href="#" class="about_btn">Leia mais</a>
+            </div>
+            <div id="about_img">
+                <img src="images/about-img.png" alt="">
+            </div>
+        </section>
+        <section id="courses">
+            <div id="courses_content">
+                <span class="tag">Cursos</span>
+                <div id="grid_courses">
+                    <div class="course">
+                        <img src="images/music-theory-img.jpg" alt="Teoria Musical">
+                        <p>Teoria Musical</p>
+                    </div>
+                    <div class="course">
+                        <img src="images/singing-img.jpg" alt="Canto">
+                        <p>Canto</p>
+                    </div>
+                    <div class="course">
+                        <img src="images/eletric-guitar-img.jpg" alt="Guitarra">
+                        <p>Guitarra</p>
+                    </div>
+                    <div class="course">
+                        <img src="images/guitar-img.jpg" alt="Violão">
+                        <p>Violão</p>
+                    </div>
+                    <div class="course">
+                        <img src="images/piano-img.jpg" alt="Teclado">
+                        <p>Teclado</p>
+                    </div>
+                    <div class="course">
+                        <img src="images/drum-img.jpg" alt="Bateria">
+                        <p>Bateria</p>
+                    </div>                   
+                </div>                
+                <a href="#" class="courses_btn">Veja todos os cursos</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="footer_items">
+            <span id="copyright">
+                &copy 2025 Amanda Teodoro
+            </span>
             <div class="social-media-buttons">
                 <a href="https://wa.me/5569984107407">
                     <i class="fa-brands fa-whatsapp"></i>
@@ -75,12 +104,9 @@
                     <i class="fa-brands fa-facebook"></i>
                 </a>
             </div>
+        </div>
+    </footer>
 
-            <div id="banner">
-                <img src="images/img-banner.png" alt="">
-            </div>
-        </section>
-    </main>
     <script src="script.js"></script>
 </body>
 </html>
