@@ -1,2 +1,6 @@
-# landing-page-portfolio
-# atv em sala para a disciplina de Programação Web II
+# Site - Clave de Sol
+### Atividade para disciplina de Programação Web II
+
+## Tecnologias utilizadas:
+### Visual Studio Code
+### HTML, CSS e Javascript
