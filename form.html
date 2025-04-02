@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clave de Sol | Escola de Música</title>
     <link rel="icon" type="image/png" sizes="32x32" href="../images/logo-icon.png" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
     <header>
         <nav id="navbar">
@@ -18,8 +24,7 @@
                 <li class="nav-item"><a href="#about">Sobre nós</a></li>
                 <li class="nav-item"><a href="#courses">Cursos</a></li>
             </ul>
-            <button class="btn-default">Entre em contato</button>
-            <button id="mobile_btn"><i class="fa-solid fa-bars"></i></button>            
+            <button id="mobile_btn"><i class="fa-solid fa-bars"></i></button>
         </nav>
         <div id="mobile_menu">
             <ul id="mobile_nav_list">
@@ -32,29 +37,48 @@
     <section id="contact">
         <div id="contact_content">
             <h2 id="contact_title">Entre em Contato</h2>
-            <p id="contact_description">Preencha o formulário abaixo e nossa equipe entrará em contato com você o mais breve possível.</p>
-            
+            <p id="contact_description">Preencha o formulário abaixo e nossa equipe entrará em contato com você o mais
+                breve possível.</p>
+
             <form id="contact_form">
                 <div class="form_group">
                     <label for="name">Nome</label>
                     <input type="text" id="name" name="name" placeholder="Seu nome" required>
                 </div>
-                
+
                 <div class="form_group">
                     <label for="email">E-mail</label>
                     <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
                 </div>
-                
+
                 <div class="form_group">
                     <label for="phone">Telefone</label>
                     <input type="tel" id="phone" name="phone" placeholder="Seu telefone" required>
                 </div>
-                
-                <div class="form_group">
-                    <label for="message">Mensagem</label>
-                    <textarea id="message" name="message" placeholder="Escreva sua mensagem" required></textarea>
-                </div>
-                
+                <form>
+                    <label>Selecione sua cidade: </label>
+                    <select name="cidade">
+                        <option value=""></option>
+                        <option value="Ji-Paraná">Ji-Paraná</option>
+                        <option value="Vilhena">Vilhena</option>
+                        <option value="Porto Velho">Porto Velho</option>
+                        <option value="Ariquemes">Ariquemes</option>
+                    </select>
+                </form>
+                <br>
+                <p>Sexo:</p>
+                <input type="radio" id="feminino" name="genero" value="feminino" required>
+                <label for="feminino">Feminino</label>
+                <br>
+                <input type="radio" id="masculino" name="genero" value="masculino" required>
+                <label for="masculino">Masculino</label>
+                <br>
+                <input type="radio" id="outro" name="genero" value="outro" required>
+                <label for="outro">Outro</label>
+                <br><br>
+                <label for="data_nascimento"><b>Data de Nascimento:</b></label>
+                <input type="date" name="data_nascimento" id="data_nascimento" required>
+                <br><br>
                 <button type="submit" class="btn-default">Enviar Mensagem</button>
             </form>
         </div>
@@ -80,4 +104,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
