@@ -141,7 +141,7 @@ body {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: url('/images/bg-img.jpg');
+    background-image: url('../images/bg-img.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -379,3 +379,84 @@ body {
     color: white;
     font-weight: 600;
  }
+
+ /* =========================================================================================== */
+/* CSS FORMULÁRIO */
+#contact {
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+#contact_container {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+#contact_title {
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form_group {
+    margin-bottom: 20px;
+}
+
+.form_group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.form_group input,
+.form_group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s ease;
+}
+
+.form_group input:focus,
+.form_group textarea:focus {
+    border-color: black;
+    outline: none;
+}
+
+#contact_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    background-color: gray;
+    border-radius: 12px;
+    padding: 12px;
+    font-weight: 600;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact_btn:hover {
+    background-color: rgb(170, 170, 170);
+}
+
+@media (max-width: 600px) {
+    #contact_container {
+        padding: 30px;
+    }
+}
